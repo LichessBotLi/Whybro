@@ -40,4 +40,4 @@ jobs:
           chmod +x ./engines/stockfish
 
       - name: Running bot
-        run: python user_interface.py --team royalracer-fans
+        run: python user_interface.py --join royalracer-fans

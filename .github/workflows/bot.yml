@@ -41,3 +41,4 @@ jobs:
 
       - name: Running bot
         run: python user_interface.py 
+             tournament kPwoWiul [royalracer-fans]

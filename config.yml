@@ -58,10 +58,9 @@ opening_books:
     bullet:
       selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
       names:                              # List of names of books to use in bullet.
-        - Titans.bin
+        - Titans
         - DefaultBook
-        - OPTIMUS4.bin
-        - Perfect2023.bin
+
     standard_black:
      selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
      names:                              # List of names of books to use as black.

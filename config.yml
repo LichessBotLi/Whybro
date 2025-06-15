@@ -59,7 +59,6 @@ opening_books:
       selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
       names:                              # List of names of books to use in bullet.
         - Titans
-        - DefaultBook
 
     standard_black:
      selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".

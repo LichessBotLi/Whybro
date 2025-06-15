@@ -55,15 +55,17 @@ opening_books:
   enabled: true                           # Activate opening books.
   priority: 400                           # Priority with which this move source is used. Higher priority is used first.
   books:
-#   bullet:
-#     selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
-#     names:                              # List of names of books to use in bullet.
-#       - Titans
-#       - DefaultBook
-#   standard_black:
-#     selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
-#     names:                              # List of names of books to use as black.
-#       - Titans
+    bullet:
+      selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+      names:                              # List of names of books to use in bullet.
+        - Titans.bin
+        - DefaultBook
+        - OPTIMUS4.bin
+        - Perfect2023.bin
+    standard_black:
+     selection: best_move                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+     names:                              # List of names of books to use as black.
+       - Titans
     standard:
       selection: best_move          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
@@ -137,20 +139,20 @@ challenge:                                # Incoming challenges. (Commenting all
   variants:                               # Chess variants to accept (https://lichess.org/variant).
     - standard
     - chess960
-#   - fromPosition
+#    - fromPosition
 #   - antichess
-#   - atomic
-#   - crazyhouse
-#   - horde
-#   - kingOfTheHill
-#   - racingKings
-#   - threeCheck
+#    - atomic
+#    - crazyhouse
+#    - horde
+#    - kingOfTheHill
+#    - racingKings
+#    - threeCheck
   time_controls:                          # Speeds or time controls in initial_minutes+increment_seconds format to accept.
     - bullet
     - blitz
     - rapid
-#   - classical
-#   - 25+0
+    - classical
+    - 25+0
   bot_modes:                              # Game modes to accept against BOTs.
     - casual                              # Unrated games.
     - rated                               # Rated games
@@ -171,10 +173,10 @@ matchmaking:
       tc: 3+0
     bullet3:
       tc: 5+0                    # Time control in initial_minutes+increment_seconds format.
-#   casual_chess960:
-#     tc: 0.5+1
-#     rated: false
-#     variant: chess960
+    casual_chess960:
+      tc: 0.5+1
+      rated: true
+      variant: chess960
 #   optional_settings:
 #     rated: true                         # Whether matchmaking should play rated games. Default: true
 #     variant: standard                   # Chess variant (https://lichess.org/variant) to challenge. Default: standard
@@ -191,10 +193,10 @@ messages:
   #   {cpu} to insert CPU information
   #   {ram} to insert RAM size
   # Any other words in curly braces will be removed.
-  greeting: " Good luck!Type !help to glimpse my arsenal"                                                              # Message sent to the opponent at the 
-  goodbye: "Good game, see you next time.May our paths cross again"                                             # Message sent to the opponent after the end 
-  greeting_spectators: "Type !help for a list of commands."                            # Message sent to the spectators at the beginning of a game.
-  goodbye_spectators: "Thanks for watching."                                           # Message sent to the spectators after the end of a game.
+  greeting: " Get ready, because you're about to lose! Good Luck - you're gonna need it!"                                                              # Message sent to the opponent at the 
+  goodbye: "Welp, GG's buddy! See ya' next time!"                                             # Message sent to the opponent after the end 
+  greeting_spectators: "Here weee gooo! Type !help for a list of commands I can respond to."                            # Message sent to the spectators at the beginning of a game.
+  goodbye_spectators: "Thanks for watching. Did you have fUn?"                                           # Message sent to the spectators after the end of a game.
 
 # whitelist:                              # List of users whose challenges are always accepted.
 #   - Username1
